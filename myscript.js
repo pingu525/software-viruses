@@ -9,7 +9,15 @@ function play_se(){
 
 $(function(){
   //ページの読み込みが完了すると実行
-  $('#test').click(play_se);
+
+
+  //モーダル表示
+  $('.modal').modal({dismissible: false});
+  $('#alert').modal('open');
+  $('#close').click(function(){
+    $('#alert').modal('close');
+    play_se();
+  });
 
 
   //端末情報取得
