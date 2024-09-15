@@ -1,8 +1,6 @@
 function play_se(){
-  var warning = new Audio('0001.mp3')
-  var voice = new Audio('0002.mp3');
+  var warning = new Audio('01.mp3');
   warning.play();
-  voice.play();
   navigator.vibrate([200,100,200,100,200,100,200]);
 }
 
