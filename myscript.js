@@ -41,7 +41,6 @@ $(function(){
   var time = 300;
   setInterval(function(){
     time--;
-    navigator.vibrate([200]);
   }
     $('#timer').text(time);
   }, 1000);
